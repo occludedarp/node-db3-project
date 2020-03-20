@@ -7,7 +7,7 @@ const db = require('../data/db-config.js');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  Schemes.find()
+  Schemes.all()
   .then(schemes => {
     res.json(schemes);
   })
@@ -18,7 +18,6 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
   const { id } = req.params;
-
   Schemes.findById(id)
   .then(scheme => {
     if (scheme) {
