@@ -2,7 +2,7 @@ const express = require('express');
 
 const Schemes = require('./scheme-model.js');
 
-// const db = require('../data/') ?
+const db = require('../data/db-config.js'); 
 
 const router = express.Router();
 

@@ -1,14 +1,13 @@
 const db = require('../data/db-config.js')
 
 module.exports = {
-  all,
-  findById,
+  all
 }
 
 function all(){ 
   return db('users');
 }
 
-function findById(id) {
-  
-}
+// function findById(id) {
+
+// }
